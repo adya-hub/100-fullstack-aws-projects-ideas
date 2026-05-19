@@ -1,0 +1,31 @@
+terraform {
+  required_version = ">= 1.6.0"
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+
+provider "aws" {
+  region = var.aws_region
+}
+
+variable "aws_region" {
+  default = "us-east-1"
+}
+
+variable "project_name" {
+  default = "blogging-platform"
+}
+
+resource "aws_s3_bucket" "assets" {
+  bucket = "${var.project_name}-assets-${data.aws_caller_identity.current.account_id}"
+}
+
+data "aws_caller_identity" "current" {}
+
+output "assets_bucket" {
+  value = aws_s3_bucket.assets.bucket
+}

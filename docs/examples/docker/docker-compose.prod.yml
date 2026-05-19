@@ -1,0 +1,33 @@
+services:
+  nginx:
+    image: nginx:1.27-alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - frontend
+      - backend
+
+  frontend:
+    build: ../../../projects/beginner/01-personal-expense-tracker/frontend
+    environment:
+      NEXT_PUBLIC_API_URL: http://backend:4000
+
+  backend:
+    build: ../../../projects/beginner/01-personal-expense-tracker/backend
+    env_file:
+      - .env.production
+    depends_on:
+      - db
+      - redis
+
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: app
+      POSTGRES_DB: expense_tracker
+
+  redis:
+    image: redis:7-alpine

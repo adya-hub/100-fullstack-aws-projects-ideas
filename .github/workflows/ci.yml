@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-and-build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        project:
+          - projects/beginner/01-personal-expense-tracker
+          - projects/intermediate/30-real-time-chat-app
+          - projects/advanced/51-ai-saas-platform
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: |
+            ${{ matrix.project }}/backend/package-lock.json
+            ${{ matrix.project }}/frontend/package-lock.json
+
+      - name: Install backend dependencies
+        working-directory: ${{ matrix.project }}/backend
+        run: npm install
+
+      - name: Install frontend dependencies
+        working-directory: ${{ matrix.project }}/frontend
+        run: npm install
+
+      - name: Build backend
+        working-directory: ${{ matrix.project }}/backend
+        run: npm run build
+
+      - name: Build frontend
+        working-directory: ${{ matrix.project }}/frontend
+        run: npm run build
+
+  terraform-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+      - name: Validate sample Terraform
+        working-directory: docs/examples/terraform/vpc-ecs
+        run: |
+          terraform init -backend=false
+          terraform validate

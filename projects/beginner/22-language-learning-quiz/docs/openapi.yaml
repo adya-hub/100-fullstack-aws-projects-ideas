@@ -1,0 +1,30 @@
+openapi: 3.1.0
+info:
+  title: Language Learning Quiz API
+  version: 1.0.0
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        "200":
+          description: OK
+  /auth/login:
+    post:
+      summary: Login
+      responses:
+        "200":
+          description: JWT issued
+  /api/v1/dashboard:
+    get:
+      summary: Dashboard metrics
+      security:
+        - bearerAuth: []
+      responses:
+        "200":
+          description: Metrics payload
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer

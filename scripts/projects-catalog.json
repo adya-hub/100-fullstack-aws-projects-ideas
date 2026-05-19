@@ -1,0 +1,3014 @@
+{
+  "levels": {
+    "beginner": {
+      "count": 25,
+      "prefix": "01"
+    },
+    "intermediate": {
+      "count": 25,
+      "prefix": "26"
+    },
+    "advanced": {
+      "count": 25,
+      "prefix": "51"
+    },
+    "enterprise": {
+      "count": 25,
+      "prefix": "76"
+    }
+  },
+  "projects": [
+    {
+      "slug": "personal-expense-tracker",
+      "name": "Personal Expense Tracker",
+      "level": "beginner",
+      "description": "Track daily spending with categories, budgets, and monthly reports.",
+      "features": [
+        "JWT auth",
+        "Category budgets",
+        "CSV export",
+        "Dashboard charts"
+      ],
+      "aws": [
+        "Cognito",
+        "RDS PostgreSQL",
+        "S3 receipts",
+        "CloudWatch"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT + Cognito",
+      "frontend": [
+        "Next.js",
+        "Tailwind",
+        "Shadcn UI"
+      ],
+      "backend": [
+        "Express",
+        "TypeScript"
+      ],
+      "outcomes": [
+        "REST API design",
+        "CRUD with PostgreSQL",
+        "Chart dashboards"
+      ]
+    },
+    {
+      "slug": "todo-app-with-teams",
+      "name": "Team Todo Application",
+      "level": "beginner",
+      "description": "Collaborative task lists with assignments, due dates, and team workspaces.",
+      "features": [
+        "Team invites",
+        "Task priorities",
+        "Real-time updates",
+        "Activity log"
+      ],
+      "aws": [
+        "Cognito",
+        "DynamoDB",
+        "AppSync",
+        "SNS"
+      ],
+      "db": "DynamoDB",
+      "auth": "Cognito",
+      "frontend": [
+        "Next.js",
+        "Zustand"
+      ],
+      "backend": [
+        "Express",
+        "GraphQL"
+      ],
+      "outcomes": [
+        "Multi-tenant data modeling",
+        "GraphQL subscriptions"
+      ]
+    },
+    {
+      "slug": "weather-dashboard",
+      "name": "Weather Intelligence Dashboard",
+      "level": "beginner",
+      "description": "Location-based forecasts with saved cities and severe weather alerts.",
+      "features": [
+        "Geolocation",
+        "7-day forecast",
+        "Alert notifications",
+        "Favorites"
+      ],
+      "aws": [
+        "Lambda",
+        "API Gateway",
+        "DynamoDB",
+        "SNS",
+        "CloudFront"
+      ],
+      "db": "DynamoDB",
+      "auth": "Guest + optional JWT",
+      "frontend": [
+        "Next.js",
+        "Framer Motion"
+      ],
+      "backend": [
+        "Lambda",
+        "Node.js"
+      ],
+      "outcomes": [
+        "Serverless APIs",
+        "Third-party API integration"
+      ]
+    },
+    {
+      "slug": "blogging-platform",
+      "name": "Modern Blogging Platform",
+      "level": "beginner",
+      "description": "Publish markdown articles with tags, comments, and SEO-friendly pages.",
+      "features": [
+        "Markdown editor",
+        "Tag filtering",
+        "Comments",
+        "RSS feed"
+      ],
+      "aws": [
+        "S3 media",
+        "CloudFront",
+        "RDS",
+        "SES"
+      ],
+      "db": "PostgreSQL",
+      "auth": "Auth.js",
+      "frontend": [
+        "Next.js",
+        "MDX"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "Content management",
+        "SEO optimization"
+      ]
+    },
+    {
+      "slug": "url-shortener",
+      "name": "Enterprise URL Shortener",
+      "level": "beginner",
+      "description": "Short links with analytics, custom slugs, and QR code generation.",
+      "features": [
+        "Click analytics",
+        "Custom domains",
+        "QR codes",
+        "Rate limiting"
+      ],
+      "aws": [
+        "Lambda",
+        "DynamoDB",
+        "CloudFront",
+        "Route53"
+      ],
+      "db": "DynamoDB",
+      "auth": "API keys + JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express",
+        "Redis"
+      ],
+      "outcomes": [
+        "High-throughput redirects",
+        "Analytics pipelines"
+      ]
+    },
+    {
+      "slug": "contact-manager-crm-lite",
+      "name": "Contact Manager CRM Lite",
+      "level": "beginner",
+      "description": "Manage contacts, notes, and follow-up reminders for small businesses.",
+      "features": [
+        "Contact pipelines",
+        "Notes timeline",
+        "Email reminders",
+        "Search"
+      ],
+      "aws": [
+        "RDS",
+        "SES",
+        "S3 attachments"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js",
+        "Shadcn UI"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "NestJS modules",
+        "Scheduled jobs"
+      ]
+    },
+    {
+      "slug": "recipe-sharing-app",
+      "name": "Recipe Sharing Community",
+      "level": "beginner",
+      "description": "Share recipes with ingredients, ratings, and meal planning.",
+      "features": [
+        "Recipe ratings",
+        "Shopping lists",
+        "Meal planner",
+        "Image upload"
+      ],
+      "aws": [
+        "S3",
+        "Rekognition labels",
+        "RDS"
+      ],
+      "db": "PostgreSQL",
+      "auth": "OAuth Google",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "File uploads",
+        "Social features"
+      ]
+    },
+    {
+      "slug": "habit-tracker",
+      "name": "Habit Streak Tracker",
+      "level": "beginner",
+      "description": "Build habits with streaks, reminders, and weekly progress visualization.",
+      "features": [
+        "Streak calendar",
+        "Push reminders",
+        "Goals",
+        "Statistics"
+      ],
+      "aws": [
+        "Cognito",
+        "DynamoDB",
+        "EventBridge"
+      ],
+      "db": "DynamoDB",
+      "auth": "Cognito",
+      "frontend": [
+        "Next.js",
+        "Tailwind"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "Time-series UX",
+        "Event scheduling"
+      ]
+    },
+    {
+      "slug": "movie-watchlist",
+      "name": "Movie Watchlist & Reviews",
+      "level": "beginner",
+      "description": "Track films to watch, ratings, and personalized recommendations.",
+      "features": [
+        "TMDB integration",
+        "Watchlist",
+        "Reviews",
+        "Recommendations"
+      ],
+      "aws": [
+        "Lambda",
+        "ElastiCache",
+        "RDS"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "External API caching",
+        "Recommendation basics"
+      ]
+    },
+    {
+      "slug": "password-manager-lite",
+      "name": "Password Vault Lite",
+      "level": "beginner",
+      "description": "Encrypted credential storage with master password and breach alerts.",
+      "features": [
+        "AES encryption",
+        "Password generator",
+        "Breach check",
+        "Categories"
+      ],
+      "aws": [
+        "KMS",
+        "DynamoDB",
+        "Secrets Manager"
+      ],
+      "db": "DynamoDB",
+      "auth": "Master password + JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "Client-side encryption",
+        "Security fundamentals"
+      ]
+    },
+    {
+      "slug": "event-countdown-app",
+      "name": "Event Countdown Planner",
+      "level": "beginner",
+      "description": "Count down to events with shared calendars and notification reminders.",
+      "features": [
+        "Shared events",
+        "iCal export",
+        "Reminders",
+        "Themes"
+      ],
+      "aws": [
+        "SES",
+        "SNS",
+        "RDS"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "Calendar integrations",
+        "Notification flows"
+      ]
+    },
+    {
+      "slug": "fitness-workout-logger",
+      "name": "Fitness Workout Logger",
+      "level": "beginner",
+      "description": "Log workouts, track PRs, and visualize strength progress over time.",
+      "features": [
+        "Exercise library",
+        "PR tracking",
+        "Progress charts",
+        "Templates"
+      ],
+      "aws": [
+        "RDS",
+        "S3 progress photos",
+        "CloudWatch"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js",
+        "Recharts"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "Data visualization",
+        "Mobile-responsive UI"
+      ]
+    },
+    {
+      "slug": "book-library-manager",
+      "name": "Personal Book Library",
+      "level": "beginner",
+      "description": "Catalog books with reading status, notes, and reading goals.",
+      "features": [
+        "ISBN lookup",
+        "Reading goals",
+        "Notes",
+        "Export"
+      ],
+      "aws": [
+        "Lambda",
+        "DynamoDB",
+        "S3 covers"
+      ],
+      "db": "DynamoDB",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "Barcode/ISBN APIs",
+        "Library UX patterns"
+      ]
+    },
+    {
+      "slug": "invoice-generator",
+      "name": "Freelancer Invoice Generator",
+      "level": "beginner",
+      "description": "Create professional invoices with PDF export and payment tracking.",
+      "features": [
+        "PDF generation",
+        "Client management",
+        "Payment status",
+        "Templates"
+      ],
+      "aws": [
+        "S3 PDFs",
+        "SES email",
+        "RDS"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "PDF generation",
+        "Business document flows"
+      ]
+    },
+    {
+      "slug": "poll-survey-builder",
+      "name": "Poll & Survey Builder",
+      "level": "beginner",
+      "description": "Create surveys with multiple question types and real-time result charts.",
+      "features": [
+        "Question types",
+        "Live results",
+        "Share links",
+        "Export CSV"
+      ],
+      "aws": [
+        "DynamoDB",
+        "Lambda",
+        "CloudFront"
+      ],
+      "db": "DynamoDB",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "Form builders",
+        "Aggregation queries"
+      ]
+    },
+    {
+      "slug": "notes-app-sync",
+      "name": "Synced Notes Application",
+      "level": "beginner",
+      "description": "Rich text notes with folders, search, and cross-device sync.",
+      "features": [
+        "Rich editor",
+        "Folders",
+        "Full-text search",
+        "Version history"
+      ],
+      "aws": [
+        "S3",
+        "OpenSearch",
+        "RDS"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js",
+        "TipTap"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "Full-text search",
+        "Optimistic UI"
+      ]
+    },
+    {
+      "slug": "pomodoro-focus-timer",
+      "name": "Pomodoro Focus Studio",
+      "level": "beginner",
+      "description": "Focus sessions with statistics, ambient sounds, and task integration.",
+      "features": [
+        "Timer presets",
+        "Session stats",
+        "Task linking",
+        "Sounds"
+      ],
+      "aws": [
+        "DynamoDB",
+        "CloudWatch metrics"
+      ],
+      "db": "DynamoDB",
+      "auth": "Optional JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "Web Audio API",
+        "Session analytics"
+      ]
+    },
+    {
+      "slug": "flashcard-study-app",
+      "name": "Spaced Repetition Flashcards",
+      "level": "beginner",
+      "description": "Study decks with spaced repetition algorithm and progress tracking.",
+      "features": [
+        "SM-2 algorithm",
+        "Deck sharing",
+        "Audio cards",
+        "Stats"
+      ],
+      "aws": [
+        "RDS",
+        "S3 audio",
+        "Lambda grading"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "Learning algorithms",
+        "Study UX"
+      ]
+    },
+    {
+      "slug": "pet-care-tracker",
+      "name": "Pet Care & Health Tracker",
+      "level": "beginner",
+      "description": "Track vet visits, medications, and care schedules for pets.",
+      "features": [
+        "Multi-pet profiles",
+        "Medication reminders",
+        "Vet records",
+        "Weight charts"
+      ],
+      "aws": [
+        "RDS",
+        "SNS reminders",
+        "S3 records"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Reminder systems",
+        "Health timelines"
+      ]
+    },
+    {
+      "slug": "local-business-directory",
+      "name": "Local Business Directory",
+      "level": "beginner",
+      "description": "Discover and review local businesses with maps and categories.",
+      "features": [
+        "Map view",
+        "Reviews",
+        "Business claims",
+        "Hours"
+      ],
+      "aws": [
+        "OpenSearch",
+        "S3 images",
+        "RDS"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT + OAuth",
+      "frontend": [
+        "Next.js",
+        "Mapbox"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "Geo search",
+        "Review systems"
+      ]
+    },
+    {
+      "slug": "gift-wishlist-app",
+      "name": "Gift Wishlist Registry",
+      "level": "beginner",
+      "description": "Create shareable wishlists for events with reservation to avoid duplicates.",
+      "features": [
+        "Share links",
+        "Item reservation",
+        "Privacy controls",
+        "Notifications"
+      ],
+      "aws": [
+        "DynamoDB",
+        "SES",
+        "SNS"
+      ],
+      "db": "DynamoDB",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "Shareable resources",
+        "Concurrency handling"
+      ]
+    },
+    {
+      "slug": "language-learning-quiz",
+      "name": "Language Learning Quiz",
+      "level": "beginner",
+      "description": "Vocabulary quizzes with pronunciation and progress by language level.",
+      "features": [
+        "Multiple languages",
+        "Audio playback",
+        "Level progression",
+        "Leaderboard"
+      ],
+      "aws": [
+        "Polly TTS",
+        "RDS",
+        "ElastiCache"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "Audio integration",
+        "Gamification"
+      ]
+    },
+    {
+      "slug": "parking-spot-finder",
+      "name": "Parking Spot Finder",
+      "level": "beginner",
+      "description": "Find and share available parking spots with time-limited reservations.",
+      "features": [
+        "Map pins",
+        "Spot reservation",
+        "Pricing",
+        "History"
+      ],
+      "aws": [
+        "DynamoDB",
+        "Lambda",
+        "API Gateway"
+      ],
+      "db": "DynamoDB",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "Geo-temporal data",
+        "TTL patterns"
+      ]
+    },
+    {
+      "slug": "car-maintenance-log",
+      "name": "Vehicle Maintenance Log",
+      "level": "beginner",
+      "description": "Track service history, fuel economy, and maintenance reminders.",
+      "features": [
+        "Service log",
+        "Fuel tracking",
+        "Reminders",
+        "Cost reports"
+      ],
+      "aws": [
+        "RDS",
+        "EventBridge",
+        "SES"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "Maintenance scheduling",
+        "Cost analytics"
+      ]
+    },
+    {
+      "slug": "plant-watering-reminder",
+      "name": "Plant Care Assistant",
+      "level": "beginner",
+      "description": "Watering schedules, plant identification, and care tips per species.",
+      "features": [
+        "Watering schedule",
+        "Plant ID",
+        "Care guides",
+        "Photos"
+      ],
+      "aws": [
+        "Rekognition",
+        "S3",
+        "RDS"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "ML image APIs",
+        "Scheduled reminders"
+      ]
+    },
+    {
+      "slug": "ecommerce-storefront",
+      "name": "E-Commerce Storefront",
+      "level": "intermediate",
+      "description": "Full online store with cart, checkout, orders, and admin inventory.",
+      "features": [
+        "Stripe checkout",
+        "Inventory",
+        "Order tracking",
+        "Admin panel"
+      ],
+      "aws": [
+        "RDS",
+        "S3 products",
+        "SES",
+        "CloudFront"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT + OAuth",
+      "frontend": [
+        "Next.js",
+        "Redux Toolkit"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Payment flows",
+        "Inventory management"
+      ]
+    },
+    {
+      "slug": "real-time-chat-app",
+      "name": "Real-Time Chat Application",
+      "level": "intermediate",
+      "description": "Channels, direct messages, typing indicators, and message search.",
+      "features": [
+        "WebSockets",
+        "Read receipts",
+        "File sharing",
+        "Search"
+      ],
+      "aws": [
+        "API Gateway WebSocket",
+        "DynamoDB",
+        "S3",
+        "ElastiCache"
+      ],
+      "db": "DynamoDB + Redis",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express",
+        "Socket.io"
+      ],
+      "outcomes": [
+        "Real-time architecture",
+        "Message persistence"
+      ]
+    },
+    {
+      "slug": "project-management-tool",
+      "name": "Project Management SaaS",
+      "level": "intermediate",
+      "description": "Kanban boards, sprints, time tracking, and team collaboration.",
+      "features": [
+        "Kanban",
+        "Sprints",
+        "Time logs",
+        "Comments"
+      ],
+      "aws": [
+        "RDS",
+        "SQS workers",
+        "SNS",
+        "S3 attachments"
+      ],
+      "db": "PostgreSQL",
+      "auth": "Auth.js",
+      "frontend": [
+        "Next.js",
+        "DnD Kit"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Workflow engines",
+        "Async job processing"
+      ]
+    },
+    {
+      "slug": "food-delivery-app",
+      "name": "Food Delivery Platform",
+      "level": "intermediate",
+      "description": "Restaurant menus, cart, delivery tracking, and driver assignment.",
+      "features": [
+        "Live tracking",
+        "Restaurant dashboard",
+        "Driver app API",
+        "Ratings"
+      ],
+      "aws": [
+        "RDS",
+        "SQS",
+        "SNS push",
+        "Location services"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT multi-role",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Multi-role systems",
+        "Real-time tracking"
+      ]
+    },
+    {
+      "slug": "ride-booking-app",
+      "name": "Ride Booking Platform",
+      "level": "intermediate",
+      "description": "Request rides, driver matching, fare estimation, and trip history.",
+      "features": [
+        "Fare calculator",
+        "Driver matching",
+        "Trip history",
+        "Payments"
+      ],
+      "aws": [
+        "DynamoDB",
+        "Lambda",
+        "SNS",
+        "Location"
+      ],
+      "db": "DynamoDB",
+      "auth": "Cognito",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "Matching algorithms",
+        "Geo routing"
+      ]
+    },
+    {
+      "slug": "event-booking-system",
+      "name": "Event Ticketing Platform",
+      "level": "intermediate",
+      "description": "Event creation, seat selection, ticketing, and QR check-in.",
+      "features": [
+        "Seat maps",
+        "QR tickets",
+        "Waitlist",
+        "Refunds"
+      ],
+      "aws": [
+        "RDS",
+        "S3 tickets",
+        "Lambda QR",
+        "SES"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Ticketing systems",
+        "Seat inventory"
+      ]
+    },
+    {
+      "slug": "lms-platform",
+      "name": "Learning Management System",
+      "level": "intermediate",
+      "description": "Courses, video lessons, quizzes, certificates, and instructor dashboards.",
+      "features": [
+        "Video lessons",
+        "Quizzes",
+        "Certificates",
+        "Progress"
+      ],
+      "aws": [
+        "S3 video",
+        "CloudFront",
+        "RDS",
+        "MediaConvert"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT roles",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Video streaming",
+        "Course progress tracking"
+      ]
+    },
+    {
+      "slug": "job-board-platform",
+      "name": "Job Board & Applicant Tracking",
+      "level": "intermediate",
+      "description": "Job listings, applications, resume parsing, and employer dashboards.",
+      "features": [
+        "Job search",
+        "Applications",
+        "Resume upload",
+        "ATS pipeline"
+      ],
+      "aws": [
+        "OpenSearch",
+        "S3 resumes",
+        "Textract",
+        "RDS"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Search indexing",
+        "Document parsing"
+      ]
+    },
+    {
+      "slug": "social-media-app",
+      "name": "Social Media Network",
+      "level": "intermediate",
+      "description": "Posts, feeds, follows, likes, comments, and notifications.",
+      "features": [
+        "Infinite feed",
+        "Follow graph",
+        "Notifications",
+        "Media posts"
+      ],
+      "aws": [
+        "DynamoDB",
+        "S3",
+        "SQS fanout",
+        "ElastiCache"
+      ],
+      "db": "DynamoDB",
+      "auth": "OAuth",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "Feed algorithms",
+        "Fan-out patterns"
+      ]
+    },
+    {
+      "slug": "file-storage-system",
+      "name": "Cloud File Storage System",
+      "level": "intermediate",
+      "description": "Upload, organize, share files with versioning and access controls.",
+      "features": [
+        "Folder tree",
+        "Sharing links",
+        "Versioning",
+        "Preview"
+      ],
+      "aws": [
+        "S3",
+        "CloudFront",
+        "Lambda triggers",
+        "IAM policies"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "S3 presigned URLs",
+        "File versioning"
+      ]
+    },
+    {
+      "slug": "email-campaign-tool",
+      "name": "Email Marketing Campaign Tool",
+      "level": "intermediate",
+      "description": "Contact lists, email templates, campaigns, and analytics.",
+      "features": [
+        "Templates",
+        "Scheduling",
+        "Open tracking",
+        "Segments"
+      ],
+      "aws": [
+        "SES",
+        "SQS",
+        "RDS",
+        "EventBridge"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Bulk email",
+        "Campaign analytics"
+      ]
+    },
+    {
+      "slug": "helpdesk-ticket-system",
+      "name": "Helpdesk Ticket System",
+      "level": "intermediate",
+      "description": "Support tickets, SLA tracking, agent assignment, and knowledge base.",
+      "features": [
+        "SLA timers",
+        "Agent queues",
+        "KB articles",
+        "CSAT"
+      ],
+      "aws": [
+        "RDS",
+        "SES",
+        "SNS",
+        "OpenSearch"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT roles",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "SLA workflows",
+        "Support tooling"
+      ]
+    },
+    {
+      "slug": "inventory-management",
+      "name": "Warehouse Inventory Management",
+      "level": "intermediate",
+      "description": "SKU tracking, stock alerts, purchase orders, and barcode scanning.",
+      "features": [
+        "Barcode scan",
+        "Low stock alerts",
+        "PO workflow",
+        "Reports"
+      ],
+      "aws": [
+        "RDS",
+        "SQS",
+        "S3 exports"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Inventory workflows",
+        "Reporting"
+      ]
+    },
+    {
+      "slug": "appointment-scheduling",
+      "name": "Appointment Scheduling SaaS",
+      "level": "intermediate",
+      "description": "Calendar booking, availability rules, reminders, and payments.",
+      "features": [
+        "Availability rules",
+        "Calendar sync",
+        "Deposits",
+        "Reminders"
+      ],
+      "aws": [
+        "RDS",
+        "SES",
+        "EventBridge",
+        "Stripe"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Scheduling logic",
+        "Calendar integrations"
+      ]
+    },
+    {
+      "slug": "real-estate-listings",
+      "name": "Real Estate Listings Portal",
+      "level": "intermediate",
+      "description": "Property listings, advanced search, virtual tours, and agent CRM.",
+      "features": [
+        "Map search",
+        "Virtual tours",
+        "Lead capture",
+        "Favorites"
+      ],
+      "aws": [
+        "OpenSearch",
+        "S3 media",
+        "RDS",
+        "CloudFront"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Property search",
+        "Media-heavy apps"
+      ]
+    },
+    {
+      "slug": "subscription-box-service",
+      "name": "Subscription Box Service",
+      "level": "intermediate",
+      "description": "Recurring subscriptions, box curation, and shipment tracking.",
+      "features": [
+        "Recurring billing",
+        "Box builder",
+        "Shipping",
+        "Skip/pause"
+      ],
+      "aws": [
+        "RDS",
+        "SQS fulfillment",
+        "SES"
+      ],
+      "db": "PostgreSQL",
+      "auth": "Stripe + JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Subscription billing",
+        "Fulfillment queues"
+      ]
+    },
+    {
+      "slug": "nft-marketplace-lite",
+      "name": "NFT Marketplace",
+      "level": "intermediate",
+      "description": "Mint, list, and trade digital collectibles with wallet connection.",
+      "features": [
+        "Wallet connect",
+        "Minting",
+        "Listings",
+        "Royalties"
+      ],
+      "aws": [
+        "S3 metadata",
+        "Lambda",
+        "API Gateway",
+        "CloudFront"
+      ],
+      "db": "PostgreSQL",
+      "auth": "Wallet signature",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "Web3 integration",
+        "Metadata standards"
+      ]
+    },
+    {
+      "slug": "crypto-portfolio-tracker",
+      "name": "Crypto Portfolio Tracker",
+      "level": "intermediate",
+      "description": "Track holdings, PnL, price alerts, and exchange API sync.",
+      "features": [
+        "Exchange sync",
+        "PnL charts",
+        "Price alerts",
+        "Tax export"
+      ],
+      "aws": [
+        "Lambda price feeds",
+        "DynamoDB",
+        "ElastiCache"
+      ],
+      "db": "DynamoDB",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "Financial data APIs",
+        "Real-time prices"
+      ]
+    },
+    {
+      "slug": "stock-market-tracker",
+      "name": "Stock Market Analytics",
+      "level": "intermediate",
+      "description": "Watchlists, charts, news aggregation, and portfolio simulation.",
+      "features": [
+        "Watchlists",
+        "Candlestick charts",
+        "News feed",
+        "Paper trading"
+      ],
+      "aws": [
+        "ElastiCache",
+        "RDS",
+        "Lambda ETL"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Market data",
+        "Charting libraries"
+      ]
+    },
+    {
+      "slug": "travel-itinerary-planner",
+      "name": "Travel Itinerary Planner",
+      "level": "intermediate",
+      "description": "Plan trips with flights, hotels, activities, and collaborative editing.",
+      "features": [
+        "Itinerary builder",
+        "Collaboration",
+        "Budget tracker",
+        "Maps"
+      ],
+      "aws": [
+        "RDS",
+        "S3 docs",
+        "SES invites"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Collaborative editing",
+        "Travel APIs"
+      ]
+    },
+    {
+      "slug": "healthcare-patient-portal",
+      "name": "Healthcare Patient Portal",
+      "level": "intermediate",
+      "description": "Appointments, prescriptions, lab results, and secure messaging.",
+      "features": [
+        "Appointments",
+        "Lab results",
+        "Secure chat",
+        "HIPAA patterns"
+      ],
+      "aws": [
+        "RDS encrypted",
+        "KMS",
+        "CloudTrail",
+        "SES"
+      ],
+      "db": "PostgreSQL",
+      "auth": "Cognito MFA",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Healthcare compliance patterns",
+        "Secure messaging"
+      ]
+    },
+    {
+      "slug": "legal-document-manager",
+      "name": "Legal Document Manager",
+      "level": "intermediate",
+      "description": "Contract storage, e-signatures, version control, and audit trails.",
+      "features": [
+        "E-sign",
+        "Versioning",
+        "Audit log",
+        "Templates"
+      ],
+      "aws": [
+        "S3",
+        "KMS",
+        "CloudTrail",
+        "Textract"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT + MFA",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Audit trails",
+        "Document workflows"
+      ]
+    },
+    {
+      "slug": "freelance-marketplace",
+      "name": "Freelance Services Marketplace",
+      "level": "intermediate",
+      "description": "Gig listings, proposals, escrow payments, and milestone delivery.",
+      "features": [
+        "Escrow",
+        "Milestones",
+        "Reviews",
+        "Disputes"
+      ],
+      "aws": [
+        "RDS",
+        "SQS",
+        "SES",
+        "S3 deliverables"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Marketplace payments",
+        "Escrow logic"
+      ]
+    },
+    {
+      "slug": "podcast-hosting-platform",
+      "name": "Podcast Hosting Platform",
+      "level": "intermediate",
+      "description": "Upload episodes, RSS feeds, analytics, and distribution.",
+      "features": [
+        "RSS generator",
+        "Episode analytics",
+        "Transcripts",
+        "Distribution"
+      ],
+      "aws": [
+        "S3 audio",
+        "CloudFront",
+        "Transcribe",
+        "RDS"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Media hosting",
+        "RSS syndication"
+      ]
+    },
+    {
+      "slug": "video-course-platform",
+      "name": "Video Course Platform",
+      "level": "intermediate",
+      "description": "Sell video courses with DRM-lite protection and student progress.",
+      "features": [
+        "Video player",
+        "Quizzes",
+        "Certificates",
+        "Payments"
+      ],
+      "aws": [
+        "S3",
+        "CloudFront signed URLs",
+        "RDS"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Protected streaming",
+        "Course commerce"
+      ]
+    },
+    {
+      "slug": "ai-saas-platform",
+      "name": "AI SaaS Platform",
+      "level": "advanced",
+      "description": "Multi-tenant AI workspace with model selection, usage billing, and API keys.",
+      "features": [
+        "Model routing",
+        "Usage metering",
+        "Team workspaces",
+        "API keys"
+      ],
+      "aws": [
+        "Bedrock",
+        "Lambda",
+        "DynamoDB",
+        "API Gateway",
+        "Cognito"
+      ],
+      "db": "DynamoDB",
+      "auth": "Cognito + API keys",
+      "frontend": [
+        "Next.js",
+        "Zustand"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "AI product architecture",
+        "Usage-based billing"
+      ]
+    },
+    {
+      "slug": "ai-website-builder",
+      "name": "AI Website Builder",
+      "level": "advanced",
+      "description": "Generate landing pages from prompts with editable components and hosting.",
+      "features": [
+        "Prompt to site",
+        "Component editor",
+        "Preview deploy",
+        "Templates"
+      ],
+      "aws": [
+        "Bedrock",
+        "S3 sites",
+        "CloudFront",
+        "Lambda"
+      ],
+      "db": "PostgreSQL",
+      "auth": "Auth.js",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Generative UI",
+        "Static site deploy"
+      ]
+    },
+    {
+      "slug": "ai-resume-builder",
+      "name": "AI Resume Builder",
+      "level": "advanced",
+      "description": "ATS-optimized resumes with AI suggestions and PDF export.",
+      "features": [
+        "ATS scoring",
+        "AI rewrite",
+        "Templates",
+        "PDF export"
+      ],
+      "aws": [
+        "Bedrock",
+        "S3",
+        "Lambda",
+        "SES"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "LLM document generation",
+        "PDF pipelines"
+      ]
+    },
+    {
+      "slug": "interview-prep-app",
+      "name": "AI Interview Preparation",
+      "level": "advanced",
+      "description": "Mock interviews with AI feedback, question banks, and progress tracking.",
+      "features": [
+        "Voice mock",
+        "AI feedback",
+        "Question bank",
+        "Score trends"
+      ],
+      "aws": [
+        "Bedrock",
+        "Transcribe",
+        "Polly",
+        "S3 recordings"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Voice AI",
+        "Assessment rubrics"
+      ]
+    },
+    {
+      "slug": "ai-code-reviewer",
+      "name": "AI Code Review Platform",
+      "level": "advanced",
+      "description": "GitHub integration for automated PR reviews with security scanning.",
+      "features": [
+        "GitHub App",
+        "PR comments",
+        "Security scan",
+        "Custom rules"
+      ],
+      "aws": [
+        "Lambda",
+        "SQS",
+        "Bedrock",
+        "Secrets Manager"
+      ],
+      "db": "PostgreSQL",
+      "auth": "GitHub OAuth",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "GitHub webhooks",
+        "Code analysis AI"
+      ]
+    },
+    {
+      "slug": "ai-image-generator",
+      "name": "AI Image Generation Studio",
+      "level": "advanced",
+      "description": "Text-to-image generation with galleries, styles, and credit system.",
+      "features": [
+        "Style presets",
+        "Gallery",
+        "Credits",
+        "Upscale"
+      ],
+      "aws": [
+        "Bedrock",
+        "S3",
+        "CloudFront",
+        "DynamoDB"
+      ],
+      "db": "DynamoDB",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "Image gen APIs",
+        "Credit metering"
+      ]
+    },
+    {
+      "slug": "ai-voice-assistant",
+      "name": "AI Voice Assistant Platform",
+      "level": "advanced",
+      "description": "Conversational voice agent with tools, memory, and custom personas.",
+      "features": [
+        "Voice chat",
+        "Tool use",
+        "Memory",
+        "Personas"
+      ],
+      "aws": [
+        "Bedrock",
+        "Transcribe",
+        "Polly",
+        "WebSocket API"
+      ],
+      "db": "DynamoDB",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Voice pipelines",
+        "Agent tool calling"
+      ]
+    },
+    {
+      "slug": "ai-document-analyzer",
+      "name": "AI Document Analyzer",
+      "level": "advanced",
+      "description": "Upload contracts and reports for summarization, Q&A, and clause extraction.",
+      "features": [
+        "PDF Q&A",
+        "Summaries",
+        "Clause extract",
+        "Batch jobs"
+      ],
+      "aws": [
+        "Textract",
+        "Bedrock",
+        "S3",
+        "SQS"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "RAG pipelines",
+        "Document AI"
+      ]
+    },
+    {
+      "slug": "video-streaming-platform",
+      "name": "Video Streaming Platform",
+      "level": "advanced",
+      "description": "Upload, transcode, and stream video with adaptive bitrate playback.",
+      "features": [
+        "HLS streaming",
+        "Transcoding",
+        "Playlists",
+        "Analytics"
+      ],
+      "aws": [
+        "S3",
+        "MediaConvert",
+        "CloudFront",
+        "Lambda@Edge"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Video pipelines",
+        "CDN streaming"
+      ]
+    },
+    {
+      "slug": "multi-vendor-ecommerce",
+      "name": "Multi-Vendor Marketplace",
+      "level": "advanced",
+      "description": "Vendor onboarding, commissions, split payments, and catalog management.",
+      "features": [
+        "Vendor dashboard",
+        "Commissions",
+        "Split pay",
+        "Disputes"
+      ],
+      "aws": [
+        "RDS",
+        "SQS",
+        "SES",
+        "S3"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT multi-tenant",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Marketplace architecture",
+        "Split payments"
+      ]
+    },
+    {
+      "slug": "crm-software",
+      "name": "Enterprise CRM Software",
+      "level": "advanced",
+      "description": "Leads, deals pipeline, email integration, and sales forecasting.",
+      "features": [
+        "Pipeline",
+        "Email sync",
+        "Forecasting",
+        "Automation"
+      ],
+      "aws": [
+        "RDS",
+        "OpenSearch",
+        "SES",
+        "EventBridge"
+      ],
+      "db": "PostgreSQL",
+      "auth": "SAML + JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "CRM data models",
+        "Sales automation"
+      ]
+    },
+    {
+      "slug": "hr-management-system",
+      "name": "HR Management System",
+      "level": "advanced",
+      "description": "Employee records, leave management, payroll integration, and org chart.",
+      "features": [
+        "Leave requests",
+        "Org chart",
+        "Payroll export",
+        "Onboarding"
+      ],
+      "aws": [
+        "RDS",
+        "S3 docs",
+        "Cognito",
+        "SES"
+      ],
+      "db": "PostgreSQL",
+      "auth": "Cognito",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "HR workflows",
+        "RBAC at scale"
+      ]
+    },
+    {
+      "slug": "devops-monitoring-platform",
+      "name": "DevOps Monitoring Platform",
+      "level": "advanced",
+      "description": "Uptime checks, log aggregation, alerts, and incident management.",
+      "features": [
+        "Uptime checks",
+        "Log search",
+        "Alerts",
+        "Incidents"
+      ],
+      "aws": [
+        "CloudWatch",
+        "OpenSearch",
+        "SNS",
+        "Lambda"
+      ],
+      "db": "OpenSearch",
+      "auth": "JWT + API keys",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Observability",
+        "Incident response"
+      ]
+    },
+    {
+      "slug": "kubernetes-dashboard",
+      "name": "Kubernetes Operations Dashboard",
+      "level": "advanced",
+      "description": "Cluster overview, workload health, deployments, and resource metrics.",
+      "features": [
+        "Cluster view",
+        "Pod metrics",
+        "Deploy triggers",
+        "RBAC"
+      ],
+      "aws": [
+        "EKS",
+        "CloudWatch",
+        "IAM",
+        "Prometheus"
+      ],
+      "db": "PostgreSQL",
+      "auth": "OIDC",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "K8s API integration",
+        "Cluster observability"
+      ]
+    },
+    {
+      "slug": "aws-cost-monitor",
+      "name": "AWS Cost Monitoring Tool",
+      "level": "advanced",
+      "description": "Cost breakdowns, budgets, anomaly detection, and optimization tips.",
+      "features": [
+        "Cost explorer UI",
+        "Budgets",
+        "Anomalies",
+        "Recommendations"
+      ],
+      "aws": [
+        "Cost Explorer API",
+        "Lambda",
+        "DynamoDB",
+        "SNS"
+      ],
+      "db": "DynamoDB",
+      "auth": "IAM cross-account",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "FinOps",
+        "AWS billing APIs"
+      ]
+    },
+    {
+      "slug": "ai-workflow-automation",
+      "name": "AI Workflow Automation",
+      "level": "advanced",
+      "description": "Visual workflow builder connecting apps, AI steps, and triggers.",
+      "features": [
+        "Visual builder",
+        "Triggers",
+        "AI nodes",
+        "Execution log"
+      ],
+      "aws": [
+        "Step Functions",
+        "Lambda",
+        "EventBridge",
+        "DynamoDB"
+      ],
+      "db": "DynamoDB",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Workflow engines",
+        "Step Functions"
+      ]
+    },
+    {
+      "slug": "serverless-saas-starter",
+      "name": "Serverless SaaS Platform",
+      "level": "advanced",
+      "description": "Fully serverless multi-tenant SaaS with DynamoDB single-table design.",
+      "features": [
+        "Multi-tenant",
+        "Billing",
+        "Admin",
+        "Webhooks"
+      ],
+      "aws": [
+        "Lambda",
+        "API Gateway",
+        "DynamoDB",
+        "Cognito"
+      ],
+      "db": "DynamoDB",
+      "auth": "Cognito",
+      "frontend": [
+        "Next.js Amplify"
+      ],
+      "backend": [
+        "Lambda SAM"
+      ],
+      "outcomes": [
+        "Serverless SaaS",
+        "Single-table design"
+      ]
+    },
+    {
+      "slug": "cloud-ide-platform",
+      "name": "Cloud IDE Platform",
+      "level": "advanced",
+      "description": "Browser-based IDE with workspaces, terminals, and collaborative editing.",
+      "features": [
+        "Monaco editor",
+        "Terminals",
+        "Workspaces",
+        "Collaboration"
+      ],
+      "aws": [
+        "ECS",
+        "EFS",
+        "ALB",
+        "Cognito"
+      ],
+      "db": "PostgreSQL",
+      "auth": "Cognito",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Container workspaces",
+        "WebSocket terminals"
+      ]
+    },
+    {
+      "slug": "blockchain-explorer-lite",
+      "name": "Blockchain Explorer Lite",
+      "level": "advanced",
+      "description": "Track transactions, addresses, and tokens with indexed search.",
+      "features": [
+        "Tx search",
+        "Address history",
+        "Token tracker",
+        "Webhooks"
+      ],
+      "aws": [
+        "OpenSearch",
+        "Lambda indexers",
+        "DynamoDB"
+      ],
+      "db": "OpenSearch",
+      "auth": "API keys",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Express"
+      ],
+      "outcomes": [
+        "Blockchain indexing",
+        "High-volume ingest"
+      ]
+    },
+    {
+      "slug": "iot-device-dashboard",
+      "name": "IoT Device Management Dashboard",
+      "level": "advanced",
+      "description": "Device provisioning, telemetry, alerts, and firmware OTA updates.",
+      "features": [
+        "Device registry",
+        "Telemetry",
+        "OTA",
+        "Rules engine"
+      ],
+      "aws": [
+        "IoT Core",
+        "Timestream",
+        "Lambda",
+        "SNS"
+      ],
+      "db": "Timestream",
+      "auth": "X.509 + JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "IoT architectures",
+        "Telemetry at scale"
+      ]
+    },
+    {
+      "slug": "fraud-detection-dashboard",
+      "name": "Fraud Detection Dashboard",
+      "level": "advanced",
+      "description": "Transaction scoring, rule engine, case management, and ML models.",
+      "features": [
+        "Risk scoring",
+        "Case queue",
+        "Rules",
+        "ML inference"
+      ],
+      "aws": [
+        "SageMaker",
+        "Kinesis",
+        "OpenSearch",
+        "SNS"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Fraud pipelines",
+        "Real-time scoring"
+      ]
+    },
+    {
+      "slug": "data-pipeline-orchestrator",
+      "name": "Data Pipeline Orchestrator",
+      "level": "advanced",
+      "description": "Define ETL pipelines, schedule runs, and monitor data quality.",
+      "features": [
+        "DAG editor",
+        "Scheduling",
+        "Quality checks",
+        "Lineage"
+      ],
+      "aws": [
+        "Glue",
+        "Step Functions",
+        "S3",
+        "CloudWatch"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "ETL orchestration",
+        "Data quality"
+      ]
+    },
+    {
+      "slug": "search-engine-platform",
+      "name": "Custom Search Engine Platform",
+      "level": "advanced",
+      "description": "Crawl, index, and search documents with relevance tuning.",
+      "features": [
+        "Crawler",
+        "Index management",
+        "Relevance tuning",
+        "Analytics"
+      ],
+      "aws": [
+        "OpenSearch",
+        "Lambda crawlers",
+        "S3"
+      ],
+      "db": "OpenSearch",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Search relevance",
+        "Crawler design"
+      ]
+    },
+    {
+      "slug": "api-gateway-management",
+      "name": "API Gateway Management Portal",
+      "level": "advanced",
+      "description": "Manage APIs, keys, rate limits, analytics, and developer portal.",
+      "features": [
+        "API keys",
+        "Rate limits",
+        "Analytics",
+        "Docs"
+      ],
+      "aws": [
+        "API Gateway",
+        "Lambda",
+        "DynamoDB",
+        "CloudWatch"
+      ],
+      "db": "DynamoDB",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "API productization",
+        "Developer portals"
+      ]
+    },
+    {
+      "slug": "feature-flag-service",
+      "name": "Feature Flag Service",
+      "level": "advanced",
+      "description": "Toggle features, gradual rollouts, A/B tests, and audit logs.",
+      "features": [
+        "Rollouts",
+        "A/B tests",
+        "SDK",
+        "Audit"
+      ],
+      "aws": [
+        "AppConfig",
+        "DynamoDB",
+        "CloudWatch",
+        "Lambda"
+      ],
+      "db": "DynamoDB",
+      "auth": "API keys",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Feature delivery",
+        "Experimentation"
+      ]
+    },
+    {
+      "slug": "enterprise-erp-lite",
+      "name": "Enterprise ERP Lite",
+      "level": "enterprise",
+      "description": "Modules for finance, procurement, inventory, and reporting across business units.",
+      "features": [
+        "Multi-module",
+        "Approvals",
+        "Audit",
+        "Reporting"
+      ],
+      "aws": [
+        "RDS Multi-AZ",
+        "EKS",
+        "SQS",
+        "KMS"
+      ],
+      "db": "PostgreSQL",
+      "auth": "SAML SSO",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS microservices"
+      ],
+      "outcomes": [
+        "ERP domain modeling",
+        "Enterprise RBAC"
+      ]
+    },
+    {
+      "slug": "enterprise-data-lake",
+      "name": "Enterprise Data Lake Platform",
+      "level": "enterprise",
+      "description": "Ingest, catalog, and query organizational data with governance controls.",
+      "features": [
+        "Data catalog",
+        "Governance",
+        "SQL query",
+        "Lineage"
+      ],
+      "aws": [
+        "S3 Lake",
+        "Glue",
+        "Athena",
+        "Lake Formation"
+      ],
+      "db": "S3 + Glue Catalog",
+      "auth": "IAM + SSO",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Data lake architecture",
+        "Governance"
+      ]
+    },
+    {
+      "slug": "enterprise-identity-platform",
+      "name": "Enterprise Identity Platform",
+      "level": "enterprise",
+      "description": "SSO, SCIM provisioning, MFA policies, and access reviews.",
+      "features": [
+        "SAML/OIDC",
+        "SCIM",
+        "Access reviews",
+        "MFA policies"
+      ],
+      "aws": [
+        "Cognito",
+        "IAM Identity Center",
+        "KMS",
+        "CloudTrail"
+      ],
+      "db": "PostgreSQL",
+      "auth": "OIDC/SAML",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Enterprise IAM",
+        "SCIM provisioning"
+      ]
+    },
+    {
+      "slug": "enterprise-api-mesh",
+      "name": "Enterprise API Service Mesh",
+      "level": "enterprise",
+      "description": "Service discovery, mTLS, traffic policies, and observability for microservices.",
+      "features": [
+        "mTLS",
+        "Traffic split",
+        "Retries",
+        "Tracing"
+      ],
+      "aws": [
+        "EKS",
+        "App Mesh",
+        "X-Ray",
+        "CloudWatch"
+      ],
+      "db": "PostgreSQL",
+      "auth": "mTLS + JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "Go microservices"
+      ],
+      "outcomes": [
+        "Service mesh",
+        "Distributed tracing"
+      ]
+    },
+    {
+      "slug": "enterprise-bpm-suite",
+      "name": "Enterprise BPM Suite",
+      "level": "enterprise",
+      "description": "Model business processes, human tasks, SLAs, and process analytics.",
+      "features": [
+        "BPMN editor",
+        "Human tasks",
+        "SLA",
+        "Analytics"
+      ],
+      "aws": [
+        "Step Functions",
+        "RDS",
+        "EventBridge",
+        "OpenSearch"
+      ],
+      "db": "PostgreSQL",
+      "auth": "SAML",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "BPMN workflows",
+        "Process mining"
+      ]
+    },
+    {
+      "slug": "enterprise-governance-portal",
+      "name": "Enterprise Governance Portal",
+      "level": "enterprise",
+      "description": "Policies, compliance tracking, risk registers, and audit workflows.",
+      "features": [
+        "Policy mgmt",
+        "Risk register",
+        "Audits",
+        "Evidence"
+      ],
+      "aws": [
+        "RDS",
+        "S3 evidence",
+        "CloudTrail",
+        "Config"
+      ],
+      "db": "PostgreSQL",
+      "auth": "SAML",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "GRC systems",
+        "Compliance automation"
+      ]
+    },
+    {
+      "slug": "enterprise-observability-suite",
+      "name": "Enterprise Observability Suite",
+      "level": "enterprise",
+      "description": "Unified metrics, logs, traces, SLOs, and on-call management.",
+      "features": [
+        "SLO tracking",
+        "On-call",
+        "Runbooks",
+        "Dashboards"
+      ],
+      "aws": [
+        "AMP",
+        "AMG",
+        "X-Ray",
+        "OpenSearch"
+      ],
+      "db": "OpenSearch",
+      "auth": "OIDC",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "SRE practices",
+        "SLO/error budgets"
+      ]
+    },
+    {
+      "slug": "enterprise-multi-region-saas",
+      "name": "Multi-Region SaaS Platform",
+      "level": "enterprise",
+      "description": "Globally distributed SaaS with data residency, replication, and failover.",
+      "features": [
+        "Multi-region",
+        "Data residency",
+        "Failover",
+        "Global LB"
+      ],
+      "aws": [
+        "Route53",
+        "RDS Global",
+        "DynamoDB Global",
+        "CloudFront"
+      ],
+      "db": "Multi-region",
+      "auth": "Cognito",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Global architecture",
+        "DR strategies"
+      ]
+    },
+    {
+      "slug": "enterprise-supply-chain",
+      "name": "Supply Chain Control Tower",
+      "level": "enterprise",
+      "description": "End-to-end supply chain visibility, shipments, and supplier scorecards.",
+      "features": [
+        "Shipment tracking",
+        "Supplier score",
+        "Alerts",
+        "Forecast"
+      ],
+      "aws": [
+        "RDS",
+        "IoT",
+        "Forecast",
+        "EventBridge"
+      ],
+      "db": "PostgreSQL",
+      "auth": "SAML",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Supply chain systems",
+        "Predictive analytics"
+      ]
+    },
+    {
+      "slug": "enterprise-insurance-platform",
+      "name": "Insurance Policy Platform",
+      "level": "enterprise",
+      "description": "Quotes, underwriting, policies, claims, and agent portals.",
+      "features": [
+        "Quoting",
+        "Underwriting",
+        "Claims",
+        "Agent portal"
+      ],
+      "aws": [
+        "RDS",
+        "Step Functions",
+        "Textract",
+        "SES"
+      ],
+      "db": "PostgreSQL",
+      "auth": "SAML",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Insurance workflows",
+        "Claims processing"
+      ]
+    },
+    {
+      "slug": "enterprise-banking-portal",
+      "name": "Digital Banking Portal Lite",
+      "level": "enterprise",
+      "description": "Accounts, transfers, statements, and fraud alerts with audit trails.",
+      "features": [
+        "Accounts",
+        "Transfers",
+        "Statements",
+        "Fraud alerts"
+      ],
+      "aws": [
+        "RDS encrypted",
+        "KMS",
+        "CloudTrail",
+        "Fraud Detector"
+      ],
+      "db": "PostgreSQL",
+      "auth": "MFA + JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Banking patterns",
+        "Strong audit"
+      ]
+    },
+    {
+      "slug": "enterprise-telehealth",
+      "name": "Telehealth Enterprise Platform",
+      "level": "enterprise",
+      "description": "Video visits, scheduling, EHR integration patterns, and prescriptions.",
+      "features": [
+        "Video visits",
+        "Scheduling",
+        "EHR sync",
+        "e-Rx patterns"
+      ],
+      "aws": [
+        "Chime SDK",
+        "RDS",
+        "KMS",
+        "S3 records"
+      ],
+      "db": "PostgreSQL",
+      "auth": "Cognito MFA",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Telehealth",
+        "HIPAA-oriented design"
+      ]
+    },
+    {
+      "slug": "enterprise-manufacturing-mes",
+      "name": "Manufacturing MES Lite",
+      "level": "enterprise",
+      "description": "Production orders, work centers, quality checks, and OEE dashboards.",
+      "features": [
+        "Work orders",
+        "OEE",
+        "Quality",
+        "Andon"
+      ],
+      "aws": [
+        "IoT Core",
+        "Timestream",
+        "RDS",
+        "QuickSight"
+      ],
+      "db": "PostgreSQL + Timestream",
+      "auth": "SAML",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "MES systems",
+        "OEE metrics"
+      ]
+    },
+    {
+      "slug": "enterprise-retail-oms",
+      "name": "Retail Order Management System",
+      "level": "enterprise",
+      "description": "Omnichannel orders, inventory allocation, fulfillment, and returns.",
+      "features": [
+        "OMS",
+        "Allocation",
+        "Fulfillment",
+        "Returns"
+      ],
+      "aws": [
+        "RDS",
+        "SQS",
+        "EventBridge",
+        "Lambda"
+      ],
+      "db": "PostgreSQL",
+      "auth": "SAML",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "OMS architecture",
+        "Inventory allocation"
+      ]
+    },
+    {
+      "slug": "enterprise-marketing-hub",
+      "name": "Enterprise Marketing Hub",
+      "level": "enterprise",
+      "description": "Campaign orchestration, CDP-lite profiles, attribution, and journeys.",
+      "features": [
+        "Journeys",
+        "Attribution",
+        "Segments",
+        "Campaigns"
+      ],
+      "aws": [
+        "Pinpoint",
+        "Kinesis",
+        "OpenSearch",
+        "S3"
+      ],
+      "db": "OpenSearch",
+      "auth": "SAML",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Marketing automation",
+        "Customer journeys"
+      ]
+    },
+    {
+      "slug": "enterprise-ticketing-platform",
+      "name": "Enterprise Event Ticketing",
+      "level": "enterprise",
+      "description": "Large-scale events, dynamic pricing, access control, and resale marketplace.",
+      "features": [
+        "Dynamic pricing",
+        "Access control",
+        "Resale",
+        "Capacity"
+      ],
+      "aws": [
+        "RDS",
+        "ElastiCache",
+        "CloudFront",
+        "Lambda"
+      ],
+      "db": "PostgreSQL",
+      "auth": "JWT",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "High-scale ticketing",
+        "Dynamic pricing"
+      ]
+    },
+    {
+      "slug": "enterprise-asset-management",
+      "name": "Enterprise Asset Management",
+      "level": "enterprise",
+      "description": "Track physical assets, depreciation, maintenance, and compliance.",
+      "features": [
+        "Asset registry",
+        "Depreciation",
+        "Maintenance",
+        "Compliance"
+      ],
+      "aws": [
+        "RDS",
+        "S3 docs",
+        "IoT",
+        "Config"
+      ],
+      "db": "PostgreSQL",
+      "auth": "SAML",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "EAM systems",
+        "Asset lifecycle"
+      ]
+    },
+    {
+      "slug": "enterprise-vendor-portal",
+      "name": "Enterprise Vendor Portal",
+      "level": "enterprise",
+      "description": "Vendor onboarding, PO collaboration, invoicing, and performance scorecards.",
+      "features": [
+        "Onboarding",
+        "PO collab",
+        "Invoicing",
+        "Scorecards"
+      ],
+      "aws": [
+        "RDS",
+        "S3",
+        "Textract",
+        "SES"
+      ],
+      "db": "PostgreSQL",
+      "auth": "SAML",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Vendor management",
+        "Procurement integration"
+      ]
+    },
+    {
+      "slug": "enterprise-knowledge-base",
+      "name": "Enterprise Knowledge Base",
+      "level": "enterprise",
+      "description": "Internal wiki with AI search, permissions, and content lifecycle.",
+      "features": [
+        "AI search",
+        "Permissions",
+        "Versioning",
+        "Approvals"
+      ],
+      "aws": [
+        "OpenSearch",
+        "Bedrock",
+        "S3",
+        "Kendra optional"
+      ],
+      "db": "PostgreSQL",
+      "auth": "SAML",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Enterprise search",
+        "Knowledge management"
+      ]
+    },
+    {
+      "slug": "enterprise-contract-lifecycle",
+      "name": "Contract Lifecycle Management",
+      "level": "enterprise",
+      "description": "Contract authoring, negotiations, approvals, obligations, and renewals.",
+      "features": [
+        "Authoring",
+        "Negotiation",
+        "Obligations",
+        "Renewals"
+      ],
+      "aws": [
+        "S3",
+        "Textract",
+        "Step Functions",
+        "RDS"
+      ],
+      "db": "PostgreSQL",
+      "auth": "SAML",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "CLM workflows",
+        "Obligation tracking"
+      ]
+    },
+    {
+      "slug": "enterprise-disaster-recovery",
+      "name": "Disaster Recovery Orchestrator",
+      "level": "enterprise",
+      "description": "Runbooks, failover drills, RTO/RPO tracking, and automated recovery.",
+      "features": [
+        "Runbooks",
+        "Drills",
+        "RTO/RPO",
+        "Automation"
+      ],
+      "aws": [
+        "Route53 failover",
+        "RDS replicas",
+        "Step Functions",
+        "CloudFormation"
+      ],
+      "db": "PostgreSQL",
+      "auth": "IAM",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "DR planning",
+        "Automated failover"
+      ]
+    },
+    {
+      "slug": "enterprise-zero-trust-access",
+      "name": "Zero Trust Access Gateway",
+      "level": "enterprise",
+      "description": "Policy-based access to internal apps with device posture and session recording.",
+      "features": [
+        "Device posture",
+        "Policy engine",
+        "Session audit",
+        "App catalog"
+      ],
+      "aws": [
+        "IAM",
+        "Verified Access",
+        "CloudTrail",
+        "WAF"
+      ],
+      "db": "PostgreSQL",
+      "auth": "OIDC",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Zero trust",
+        "Access policies"
+      ]
+    },
+    {
+      "slug": "enterprise-ai-governance",
+      "name": "AI Governance & Model Registry",
+      "level": "enterprise",
+      "description": "Model registry, bias reports, approval workflows, and inference audit.",
+      "features": [
+        "Model registry",
+        "Approvals",
+        "Bias reports",
+        "Audit"
+      ],
+      "aws": [
+        "SageMaker",
+        "Bedrock",
+        "S3",
+        "CloudTrail"
+      ],
+      "db": "PostgreSQL",
+      "auth": "SAML",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "AI governance",
+        "Model lifecycle"
+      ]
+    },
+    {
+      "slug": "enterprise-privacy-portal",
+      "name": "Privacy & Consent Management",
+      "level": "enterprise",
+      "description": "Consent banners, DSAR requests, data mapping, and retention policies.",
+      "features": [
+        "Consent",
+        "DSAR",
+        "Data map",
+        "Retention"
+      ],
+      "aws": [
+        "RDS",
+        "Lambda",
+        "Macie",
+        "CloudTrail"
+      ],
+      "db": "PostgreSQL",
+      "auth": "SAML",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Privacy compliance",
+        "DSAR automation"
+      ]
+    },
+    {
+      "slug": "enterprise-integration-hub",
+      "name": "Enterprise Integration Hub",
+      "level": "enterprise",
+      "description": "iPaaS-style connectors, transformations, and monitored integrations.",
+      "features": [
+        "Connectors",
+        "Transforms",
+        "Monitoring",
+        "Replay"
+      ],
+      "aws": [
+        "EventBridge",
+        "SQS",
+        "Lambda",
+        "API Gateway"
+      ],
+      "db": "PostgreSQL",
+      "auth": "API keys + SAML",
+      "frontend": [
+        "Next.js"
+      ],
+      "backend": [
+        "NestJS"
+      ],
+      "outcomes": [
+        "Integration patterns",
+        "Event-driven ETL"
+      ]
+    }
+  ]
+}
